@@ -1,5 +1,5 @@
 # lilypond-scores
-This repository lilypond files for scores under public domain.
+This repository contains lilypond files for scores under public domain.
 
 Only the `.ly` files are versionsed controlled in git.
 
