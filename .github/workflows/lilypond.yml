@@ -10,6 +10,9 @@ on:
   release:
     types: [ published ]
 
+permissions:
+  contents: write
+
 jobs:
   directories:
     name: Generate Matrix for Build
@@ -98,4 +101,4 @@ jobs:
         with:
           body: ${{ steps.create_release_notes.outputs.body }}
           files: ${{ steps.list_pdfs.outputs.pdf_files }}
-
+          token: ${{ secrets.GITHUB_TOKEN }}
