@@ -42,31 +42,31 @@ melodyVoice = \relative c'' {
   \key g \major
   \time 3/2
   \stemUp \slurUp
-   g2 \f ( g d'
-   b a g
-   fis
-   e d
-   e fis g
-   a1.
-   g\parenthesize\fermata )\break
+  g2 \f ( g d'
+  b a g
+  fis
+  e d
+  e fis g
+  a1.
+  g\parenthesize\fermata )\break
 
-   g2( g d'
-   b a g
-    fis e d
-    e fis g
-    a1.
-    g\parenthesize\fermata)
+  g2( g d'
+  b a g
+  fis e d
+  e fis g
+  a1.
+  g\parenthesize\fermata)
 
-    d'2( d d\break
-    e1.\parenthesize\fermata)
-    b2( c d
-    d c b
-    a1.)
+  d'2( d d\break
+  e1.\parenthesize\fermata)
+  b2( c d^-
+  d^- c b
+  a1.\parenthesize\fermata)
 
-    d,2( \fff e fis
-    g a b
-    a1.
-    g\fermata)
+  d,2( \fff e fis
+  g a b
+  a1.
+  g\fermata)
 }
 bassVoice = \relative c {
   \clef bass
@@ -74,6 +74,7 @@ bassVoice = \relative c {
   \time 3/2
   \slurDown
   \stemDown
+  \override Tie.direction = #UP
   g'4( a b g a b
   e d c2 b4 g
   a fis g a2 gis8 a
@@ -97,7 +98,7 @@ bassVoice = \relative c {
   b,( c d4 c
   b g' fis e d f
   e g~g fis8 e fis2
-  d1.)
+  d1.\fermata)
 }
 
 harmonyVoice = \relative c'' {
@@ -154,7 +155,7 @@ pedalVoice = \relative c {
   \time 3/2
   % Your pedal notes here
   r1.
-    e,2--( \f e-- b'
+  e,2--( \f e-- b'
   a g fis
   e d c
   cis d d'
@@ -181,17 +182,17 @@ pedalVoice = \relative c {
 % Define the staff system
 \score {
   <<
-  \new StaffGroup <<
-    \new Staff = "melodyAndHarmonyStaff" <<
-      \clef treble
-      \new Voice = "melody" { \melodyVoice }
-      \new Voice = "harmony" { \harmonyVoice }
-    >>
+    \new StaffGroup <<
+      \new Staff = "melodyAndHarmonyStaff" <<
+        \clef treble
+        \new Voice = "melody" { \melodyVoice }
+        \new Voice = "harmony" { \harmonyVoice }
+      >>
 
-    \new Staff = "bassStaff" <<
-      \new Voice = "bass" { \bassVoice }
-      \new Voice = "basstwo" { \secondBassVoice }
-    >>
+      \new Staff = "bassStaff" <<
+        \new Voice = "bass" { \bassVoice }
+        \new Voice = "basstwo" { \secondBassVoice }
+      >>
     >>
     \new Staff = "pedalStaff" <<
       \new Voice = "pedal" { \pedalVoice }
