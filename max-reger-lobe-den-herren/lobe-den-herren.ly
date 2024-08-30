@@ -50,14 +50,14 @@ melodyVoice = \relative c'' {
   a1.
   g\parenthesize\fermata )\break
 
-  g2( g d'
+  g2^--\markup{\italic "più."}\f( g^- d'
   b a g
   fis e d
   e fis g
   a1.
   g\parenthesize\fermata)
 
-  d'2^-\f( d^- d^-\break
+  d'2^--\markup{\italic "sempre più."}\f( d^- d^-\break
   e1.\parenthesize\fermata)
   b2( c d^-
   d^- c b
