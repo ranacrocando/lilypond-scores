@@ -1,6 +1,7 @@
 \version "2.24.0" % Specify the version of LilyPond
 #(set-default-paper-size "a4" 'landscape)
 % this is based on https://imslp.org/wiki/30_Kleine_Choralvorspiele,_Op.135a_%28Reger,_Max%29
+% https://imslp.org/wiki/Special:ReverseLookup/201428 page 15
 % licensed under the Creative Commons CC0 1.0 Universal Public Domain Dedication
 
 \header {
@@ -18,11 +19,11 @@
         \line {
           Based on
           \with-url
-          #"https://imslp.org/wiki/30_Kleine_Choralvorspiele,_Op.135a_%28Reger,_Max%29"
+          #"https://imslp.org/wiki/Special:ReverseLookup/201428"
           "C.F. Peters Leipzig (1915)"
           Find the source files: \bold \italic \typewriter {
             \with-url
-            #"https://github.com/ranacrocando/lilypond-scores/blob/main/lord-of-all-hopefulness/"
+            #"https://github.com/ranacrocando/lilypond-scores/blob/main/max-reger-lobe-den-herren/"
             "github.com/ranacrocando/lilypond-scores"
           }
         }
@@ -42,7 +43,7 @@ melodyVoice = \relative c'' {
   \key g \major
   \time 3/2
   \stemUp \slurUp
-  g2 \f ( g d'
+  g2^- \f ( g^- d'
   b a g
   fis
   e d
@@ -50,14 +51,14 @@ melodyVoice = \relative c'' {
   a1.
   g\parenthesize\fermata )\break
 
-  g2^--\markup{\italic "più."}\f( g^- d'
+  g2^--\markup{\italic "più"}\f( g^- d'
   b a g
   fis e d
   e fis g
   a1.
   g\parenthesize\fermata)
 
-  d'2^--\markup{\italic "sempre più."}\f( d^- d^-\break
+  d'2^--\markup{\italic "sempre più"}\f( d^- d^-\break
   e1.\parenthesize\fermata)
   b2( c d^-
   d^- c b
@@ -155,20 +156,20 @@ pedalVoice = \relative c {
   \time 3/2
   % Your pedal notes here
   r1.
-  e,2--( \f e-- b'
+  _\f-\markup{\italic "ben marc."} e,2--(  e-- b'
   a g fis
   e d c
   cis d d'
   g,1.)
 
-  r2 r2 g--(
+  r2 r2 _\markup{\italic "più"}_\f-\markup{\italic "sempre ben marc."} g--(
   g-- d' b
   a g fis
   e d e
   c cis d g1.)
 
   r1.
-  c2--( c-- c--
+  _\markup{\italic "sempre più"}\f-\markup{\italic "sempre ben marc."} c2--( c-- c--
   d c b
   fis e4 d g2
   d' a d,)
