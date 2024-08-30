@@ -48,17 +48,17 @@ melodyVoice = \relative c'' {
    e d
    e fis g
    a1.
-   g)\break
+   g\fermata )\break
 
    g2( g d'
    b a g
     fis e d
     e fis g
     a1.
-    g)
+    g\fermata)
 
     d'2( d d\break
-    e1.)
+    e1.\fermata)
     b2( c d
     d c b
     a1.)
@@ -154,20 +154,20 @@ pedalVoice = \relative c {
   \time 3/2
   % Your pedal notes here
   r1.
-    e,2( \f e b'
+    e,2--( \f e-- b'
   a g fis
   e d c
   cis d d'
   g,1.)
 
-  s2 s2 g(
-  g d' b
+  r2 r2 g--(
+  g-- d' b
   a g fis
   e d e
   c cis d g1.)
 
   r1.
-  c2( c c
+  c2--( c-- c--
   d c b
   fis e4 d g2
   d' a d,)
