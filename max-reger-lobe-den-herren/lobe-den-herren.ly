@@ -48,17 +48,17 @@ melodyVoice = \relative c'' {
    e d
    e fis g
    a1.
-   g\fermata )\break
+   g\parenthesize\fermata )\break
 
    g2( g d'
    b a g
     fis e d
     e fis g
     a1.
-    g\fermata)
+    g\parenthesize\fermata)
 
     d'2( d d\break
-    e1.\fermata)
+    e1.\parenthesize\fermata)
     b2( c d
     d c b
     a1.)
