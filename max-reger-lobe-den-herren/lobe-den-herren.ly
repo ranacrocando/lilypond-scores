@@ -57,14 +57,14 @@ melodyVoice = \relative c'' {
   a1.
   g\parenthesize\fermata)
 
-  d'2( d d\break
+  d'2^-\f( d^- d^-\break
   e1.\parenthesize\fermata)
   b2( c d^-
   d^- c b
   a1.\parenthesize\fermata)
 
   d,2( \fff e fis
-  g a b
+  g -\markup { \italic "sempre rit." } a b
   a1.
   g\fermata)
 }
