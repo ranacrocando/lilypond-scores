@@ -92,10 +92,11 @@ jobs:
         id: list_pdfs
         run: |
           # Find all PDF files in the directory and save them to a variable
-          files=$(find release_pdfs -name '*.pdf' -print | tr '\n' '\n')
+          files=$(find release_pdfs -name '*.pdf' -print | tr '\n' ' ')
           echo "Found PDF files:"
           echo "$files"
           echo "::set-output name=pdf_files::$files"
+
       - name: Upload Release Assets
         uses: softprops/action-gh-release@v2
         with:
