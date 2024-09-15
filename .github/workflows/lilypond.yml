@@ -74,31 +74,32 @@ jobs:
           name: "${{matrix.directory}} Scores"
           path: ${{matrix.directory}}/*.pdf
 
-  release_artifacts:
-    name: Upload Release Artifacts
-    runs-on: ubuntu-latest
-    needs: [ build_scores ]
-    if: github.event_name == 'release'
-    steps:
-      - name: Set up Git repository
-        uses: actions/checkout@v4
+release_artifacts:
+  name: Upload Release Artifacts
+  runs-on: ubuntu-latest
+  needs: [ build_scores ]
+  if: github.event_name == 'release'
+  steps:
+    - name: Set up Git repository
+      uses: actions/checkout@v4
 
-      - name: Download All PDF Artifacts
-        uses: actions/download-artifact@v4
-        with:
-          path: release_pdfs
+    - name: Download All PDF Artifacts
+      uses: actions/download-artifact@v4
+      with:
+        path: release_pdfs
 
-      - name: Find and list all PDF files
-        id: list_pdfs
-        run: |
-          # Find all PDF files in the directory and save them to a variable
-          files=$(find release_pdfs -name '*.pdf' -print | tr '\n' '\n')
-          echo "Found PDF files:"
-          echo "$files"
-          echo "::set-output name=pdf_files::$files"
-      - name: Upload Release Assets
-        uses: softprops/action-gh-release@v2
-        with:
-          body: ${{ steps.create_release_notes.outputs.body }}
-          files: ${{ steps.list_pdfs.outputs.pdf_files }}
-          token: ${{ secrets.GITHUB_TOKEN }}
+    - name: Find and list all PDF files
+      id: list_pdfs
+      run: |
+        # Find all PDF files in the directory and save them to a variable
+        files=$(find release_pdfs -name '*.pdf' -print | tr '\n' ' ')
+        echo "Found PDF files:"
+        echo "$files"
+        echo "::set-output name=pdf_files::$files"
+
+    - name: Upload Release Assets
+      uses: softprops/action-gh-release@v2
+      with:
+        body: ${{ steps.create_release_notes.outputs.body }}
+        files: ${{ steps.list_pdfs.outputs.pdf_files }}
+        token: ${{ secrets.GITHUB_TOKEN }}
