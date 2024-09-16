@@ -86,20 +86,12 @@ jobs:
       - name: Download All PDF Artifacts
         uses: actions/download-artifact@v4
         with:
-          path: release_pdfs
-
-      - name: Find and list all PDF files
-        id: list_pdfs
-        run: |
-          # Find all PDF files and join them into a space-separated string
-          files=$(find release_pdfs -name '*.pdf' | paste -sd ' ' -)
-          echo "Found PDF files:"
-          echo "$files"
-          echo "::set-output name=pdf_files::$files"
+          path: release_pdf
 
       - name: Upload Release Assets
         uses: softprops/action-gh-release@v2
         with:
           body: ${{ steps.create_release_notes.outputs.body }}
-          files: ${{ steps.list_pdfs.outputs.pdf_files }}
+          files: |
+             *.pdf
           token: ${{ secrets.GITHUB_TOKEN }}
