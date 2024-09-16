@@ -31,7 +31,7 @@ bassIntro = \relative c {
   f4 f c' aes4. g8 f4
   aes4 aes ees' c4. bes8 aes4 g2.~g2~g8 f8
   e2~e8 ees8 d2. cis2. d2~d8 f8 fis2. g2~g8 f8
-  e2. f2. s2. f4 f c' a4. g8 f4
+  e2. f4 f c' a4. g8 f4
   e4 d c d e f
   \once \override TextSpanner.bound-details.left.text = \markup { \italic "rit." }
   \startTextSpan
@@ -46,7 +46,7 @@ chordIntro = \chordmode {
   \global
   f2. f bes c:7
   f:m f:m aes aes g:4 g
-  c d:m a d:m d g:m c f:4 f
+  c d:m a d:m d g:m c
   f f
   a:m d:m g:m c:7 f
 }
