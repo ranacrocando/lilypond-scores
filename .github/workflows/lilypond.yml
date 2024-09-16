@@ -86,20 +86,13 @@ jobs:
       - name: Download All PDF Artifacts
         uses: actions/download-artifact@v4
         with:
-          path: release_pdfs
-
-      - name: Find and list all PDF files
-        id: list_pdfs
-        run: |
-          # Find all PDF files in the directory and save them to a variable
-          files=$(find release_pdfs -name '*.pdf' -print | tr '\n' ' ')
-          echo "Found PDF files:"
-          echo "$files"
-          echo "::set-output name=pdf_files::$files"
-
+          path: release_pdf
+      - name: Copy all PDFs to root level
+        run: find . -type f -name "*.pdf" -exec cp {} . \;
       - name: Upload Release Assets
         uses: softprops/action-gh-release@v2
         with:
           body: ${{ steps.create_release_notes.outputs.body }}
-          files: ${{ steps.list_pdfs.outputs.pdf_files }}
+          files: |
+             *.pdf
           token: ${{ secrets.GITHUB_TOKEN }}
