@@ -87,7 +87,8 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           path: release_pdf
-
+      - name: Copy all PDFs to root level
+        run: find . -type f -name "*.pdf" -exec cp {} . \;
       - name: Upload Release Assets
         uses: softprops/action-gh-release@v2
         with:
