@@ -91,8 +91,8 @@ jobs:
       - name: Find and list all PDF files
         id: list_pdfs
         run: |
-          # Find all PDF files in the directory and save them to a variable
-          files=$(find release_pdfs -name '*.pdf' -print | tr '\n' ' ')
+          # Find all PDF files and join them into a space-separated string
+          files=$(find release_pdfs -name '*.pdf' | paste -sd ' ' -)
           echo "Found PDF files:"
           echo "$files"
           echo "::set-output name=pdf_files::$files"
