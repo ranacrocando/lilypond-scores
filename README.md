@@ -12,3 +12,4 @@ Find the automatically built `.pdf` files attached to [latest release](https://g
 |Lobe den Herren, mächtigen König der Ehre|Max Reger|[PDF](https://github.com/ranacrocando/lilypond-scores/releases/latest/download/max-reger-lobe-den-herren.pdf)|Orgelvorspiel|[IMSLP](https://imslp.org/wiki/Special:ReverseLookup/929643)|
 |Lord of all Hopefulness|Jan Struther|[PDF](https://github.com/ranacrocando/lilypond-scores/releases/latest/download/lord-of-all-hopefulness.pdf)|Melody + Chords|[IMSLP](https://imslp.org/wiki/Special:ReverseLookup/928986)|
 |Eine Muh, eine Mäh, eine Tätärätätä|Wilhelm Lindemann|[PDF](https://github.com/ranacrocando/lilypond-scores/releases/latest/download/eine-muh-eine-maeh.pdf)|Melody + Chords|-|
+|Der Mond ist aufgegangen|Matthias Claudius|[PDF](https://github.com/ranacrocando/lilypond-scores/releases/latest/download/der-mond-is-aufgegangen.pdf)|Melody + Chords|-|
