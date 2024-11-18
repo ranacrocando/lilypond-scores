@@ -19,14 +19,13 @@
   }
 }
 
-
-global = {
+muhGlobal = {
   \key f \major
   \time 4/4
 }
 
-melodyVerse = \relative c' {
-  \global
+muhMelodyVerse = \relative c' {
+  \muhGlobal
   c8 g' a a a g g4
   c,8 c bes' bes bes a a4
   f8 f f' f e4 d c8. c16 bes8 e, g4 f
@@ -37,13 +36,13 @@ melodyVerse = \relative c' {
   c8 c c c c4 r8 c8
   c c c c c4\fermata
 }
-melodyVerseAlternate = \relative c' {
-  \global
+muhMelodyVerseAlternate = \relative c' {
+  \muhGlobal
   \stemUp
   s1 s1 s1 s1 s1 s1 s1 s1 s1
   s8 s8 \parenthesize d'8 \parenthesize dis \parenthesize e4
 }
-melodyChorus = \relative c'{
+muhMelodyChorus = \relative c'{
   \partial 4 b8 c a'4 e8 f c'4 bes8 a a8. g16 g8 g g4 g8 f
   e4 d' c a8 g f4 d' c b,8 c
   a'4 e8 f c'4 bes8 a a8. g16 g8 g g4 g8 f
@@ -51,9 +50,8 @@ melodyChorus = \relative c'{
   \bar ":|."
 }
 
-
 % Lyrics
-verseOne = \lyricmode {
+muhVerseOne = \lyricmode {
   \set stanza = "1."
   Wenn der Weih -- nachts -- baum uns lacht,
   wenn die Glo -- cke bim bam macht,
@@ -64,7 +62,7 @@ verseOne = \lyricmode {
   Und packt un -- ter La - -- chen aus die schön -- sten Sa - chen.
   Au -- ßer Ku -- chen -- zeug, bringt noch der Gu -- te euch:
 }
-chorus = \lyricmode {
+muhChorus = \lyricmode {
   \set stanza = "Chorus"
   \partial 4 Ei -- ne
   Muh, ei -- ne Mäh, ei --ne Tä -- te -- rä -- tä -- tä,
@@ -73,7 +71,7 @@ chorus = \lyricmode {
   ei -- ne Wau -- wau -- wau, Ra -- ta -- tsching -- da -- ra -- ta -- bum.
 }
 
-verseTwo = \lyricmode {
+muhVerseTwo = \lyricmode {
   \set stanza = "2."
   Wenn der Schnee zum Berg sich türmt,
   wenn es drau -- ßen friert und stürmt,
@@ -87,7 +85,7 @@ verseTwo = \lyricmode {
   zeigt uns der Weih -- nachts -- mann:
 }
 
-chordsVerse = \chordmode {
+muhChordsVerse = \chordmode {
   f2 c f d:m
   d:m bes a4:m g:m c:7 f
   c1 g2:7 c
@@ -95,7 +93,7 @@ chordsVerse = \chordmode {
   c f fis4:dim g:aug c:7
 }
 
-chordsChorus = \chordmode {
+muhChordsChorus = \chordmode {
   \partial 4 r4
   f1
   g:m
@@ -106,29 +104,30 @@ chordsChorus = \chordmode {
   c2 c:7
   f1
 }
+
 % Score with layout settings
 \score {
   <<
     \new ChordNames {
-      \chordsVerse
-      \chordsChorus
+      \muhChordsVerse
+      \muhChordsChorus
     }
     \new StaffGroup <<
       \new Staff {
         <<
-          \new Voice = "melody" \melodyVerse
-          \new Voice = "melodyAlternate" \melodyVerseAlternate
+          \new Voice = "muhMelody" \muhMelodyVerse
+          \new Voice = "muhMelodyAlternate" \muhMelodyVerseAlternate
         >>
-        \new Voice = "chorus" \melodyChorus
+        \new Voice = "muhChorus" \muhMelodyChorus
       }
-      \new Lyrics \lyricsto "melody" {
-        \verseOne
+      \new Lyrics \lyricsto "muhMelody" {
+        \muhVerseOne
       }
-      \new Lyrics \lyricsto "melody" {
-        \verseTwo
+      \new Lyrics \lyricsto "muhMelody" {
+        \muhVerseTwo
       }
-      \new Lyrics \lyricsto "chorus" {
-        \chorus
+      \new Lyrics \lyricsto "muhChorus" {
+        \muhChorus
       }
     >>
   >>
