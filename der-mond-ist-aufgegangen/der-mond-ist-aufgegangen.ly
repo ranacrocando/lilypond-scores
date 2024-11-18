@@ -26,14 +26,13 @@
   }
 }
 
-
-global = {
+mondGlobal = {
   \key f \major
   \time 4/4
 }
 
-melody = \relative c' {
-  \global
+mondMelody = \relative c' {
+  \mondGlobal
   \partial 4
   f4 g f bes a g2 f4\breathe
   a a a d c bes2 a4\breathe
@@ -44,9 +43,8 @@ melody = \relative c' {
   \bar "|."
 }
 
-
 % Lyrics
-verseOne = \lyricmode {
+mondVerseOne = \lyricmode {
   \set stanza = "1."
   Der Mond ist auf -- ge -- gan -- gen,
   die gold -- nen Stern -- lein pran -- gen
@@ -55,7 +53,7 @@ verseOne = \lyricmode {
   und aus den Wie -- sen stei -- get
   der wei -- ße Ne -- bel wun -- der -- bar.
 }
-verseTwo = \lyricmode {
+mondVerseTwo = \lyricmode {
   \set stanza = "2."
   Wie ist die Welt so stil -- le
   und in der Dämm -- rung Hül -- le
@@ -64,7 +62,7 @@ verseTwo = \lyricmode {
   wo ihr des Ta -- ges Jam -- mer
   ver -- schla -- fen und ver -- ges -- sen sollt.
 }
-verseThree = \lyricmode {
+mondVerseThree = \lyricmode {
   \set stanza = "3."
   Seht ihr den Mond dort ste -- hen?
   Er ist nur halb zu se -- hen
@@ -74,32 +72,33 @@ verseThree = \lyricmode {
   weil uns -- re Au -- gen sie nicht sehn.
 }
 
-chordsOne = \chordmode {
+mondChordsOne = \chordmode {
   \partial 4 f4 c:7/e d:m bes f c:2 c:7 f4
   d:m a/cis d:m bes f g2:m a4
-  d:m a d:m g:m d :7 g2.:m
+  d:m a d:m g:m d:7 g2.:m
   d4:m c:m d:m e:dim7 d/fis g:m c:7 f4
   d:m a d:m bes c:m g2:m a4
   d:m a:m f g:m f g:m c:7 f
 }
+
 % Score with layout settings
 \score {
   <<
     \new ChordNames {
-      \chordsOne
+      \mondChordsOne
     }
     \new StaffGroup <<
       \new Staff {
-        \new Voice = "melody" \melody
+        \new Voice = "mondMelody" \mondMelody
       }
-      \new Lyrics \lyricsto "melody" {
-        \verseOne
+      \new Lyrics \lyricsto "mondMelody" {
+        \mondVerseOne
       }
-      \new Lyrics \lyricsto "melody" {
-        \verseTwo
+      \new Lyrics \lyricsto "mondMelody" {
+        \mondVerseTwo
       }
-      \new Lyrics \lyricsto "melody" {
-        \verseThree
+      \new Lyrics \lyricsto "mondMelody" {
+        \mondVerseThree
       }
     >>
   >>
