@@ -77,7 +77,7 @@ mondChordsOne = \chordmode {
   d:m a/cis d:m bes f g2:m a4
   d:m a d:m g:m d:7 g2.:m
   d4:m ees:6 d:m e:dim7 d/fis g:m c:7 f4
-  d:m a d:m bes c:m g2:m a4
+  d:m a d:m b:dim c:m g2:m a4
   d:m a:m f g:m f g:m c:7 f
 }
 
