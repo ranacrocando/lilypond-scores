@@ -3,6 +3,7 @@
 % this is based on https://imslp.org/wiki/30_Kleine_Choralvorspiele,_Op.135a_%28Reger,_Max%29
 % https://imslp.org/wiki/Special:ReverseLookup/201428 page 15
 % licensed under the Creative Commons CC0 1.0 Universal Public Domain Dedication
+% sources: https://github.com/ranacrocando/lilypond-scores/blob/main/max-reger-lobe-den-herren/
 
 \header {
   title = "Lobe den Herren, den mächtigen König der Ehren."
@@ -21,11 +22,6 @@
           \with-url
           #"https://imslp.org/wiki/Special:ReverseLookup/201428"
           "C.F. Peters Leipzig (1915)"
-          Find the source files: \bold \italic \typewriter {
-            \with-url
-            #"https://github.com/ranacrocando/lilypond-scores/blob/main/max-reger-lobe-den-herren/"
-            "github.com/ranacrocando/lilypond-scores"
-          }
         }
       }
     }

@@ -1,5 +1,6 @@
 \version "2.24.0" % Specify the version of LilyPond
 #(set-default-paper-size "a5" 'portrait)
+% sources: https://github.com/ranacrocando/lilypond-scores/blob/main/der-mond-ist-aufgegangen/
 \header {
   title = "Der Mond ist aufgegangen (Abendlied)"
   composer = "Text: Matthias Claudius (1740-1815); Melodie: Johann A.P. Schulz (1747-1800)"
@@ -14,12 +15,7 @@
           Based on a
           \with-url
           #"https://imslp.org/wiki/Special:ReverseLookup/428256"
-          "Score by Georg L. Sothilander; "
-          Find the source files: \bold \italic \typewriter {
-            \with-url
-            #"https://github.com/ranacrocando/lilypond-scores/blob/main/der-mond-ist-aufgegangen/"
-            "github.com/ranacrocando/lilypond-scores"
-          }
+          "Score by Georg L. Sothilander"
         }
       }
     }
