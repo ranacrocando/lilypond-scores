@@ -325,7 +325,8 @@ secundaSecondBassVoice = \relative c {
   \layout {}
 }
 
-twoWayFermata = { % https://lsr.di.unimi.it/LSR/Item?id=1162
+twoWayFermata = {
+  % https://lsr.di.unimi.it/LSR/Item?id=1162
   \once \set Staff.caesuraType = #'((underlying-bar-line . "||"))
   \once \set Staff.caesuraTypeTransform = ##f
   \caesura ^\fermata _\fermata
