@@ -2,6 +2,7 @@
 #(set-default-paper-size "a4" 'landscape)
 % this is based on https://commons.wikimedia.org/w/index.php?title=File:Slane_(anacrucial_version).png&oldid=910130329
 % by Cnbrb, licensed under the Creative Commons CC0 1.0 Universal Public Domain Dedication
+% sources: https://github.com/ranacrocando/lilypond-scores/blob/main/lord-of-all-hopefulness/
 
 \header {
   title = "Lord of all Hopefulness (Slane)"
@@ -17,12 +18,7 @@
           Based on a
           \with-url
           #"https://commons.wikimedia.org/w/index.php?title=File:Slane_(anacrucial_version).png&oldid=910130329"
-          "Score by Cnbrb; "
-          Find the source files: \bold \italic \typewriter {
-            \with-url
-            #"https://github.com/ranacrocando/lilypond-scores/blob/main/lord-of-all-hopefulness/"
-            "github.com/ranacrocando/lilypond-scores"
-          }
+          "Score by Cnbrb"
         }
       }
     }

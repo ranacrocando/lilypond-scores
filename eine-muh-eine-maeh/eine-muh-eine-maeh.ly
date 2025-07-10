@@ -1,22 +1,10 @@
 \version "2.24.0" % Specify the version of LilyPond
 #(set-default-paper-size "a5" 'portrait')
+% sources: https://github.com/ranacrocando/lilypond-scores/blob/main/eine-muh-eine-maeh/
 \header {
   title = "Eine Muh, eine Mäh (eine Tätärätätä)"
   composer = "Wilhelm Lindemann (1882-1941)"
-  tagline = \markup {
-    \override #'(font-size . -4)
-    \center-align {
-
-      \line {
-        Find the source files: \bold \italic \typewriter {
-          \with-url
-          #"https://github.com/ranacrocando/lilypond-scores/blob/main/eine-muh-eine-maeh/"
-          "github.com/ranacrocando/lilypond-scores"
-        }
-      }
-
-    }
-  }
+  tagline = ""
 }
 
 muhGlobal = {
