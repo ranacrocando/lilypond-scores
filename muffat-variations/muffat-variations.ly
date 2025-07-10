@@ -4,6 +4,10 @@
 % https://imslp.org/wiki/Special:ReverseLookup/299955 page 13-15
 % licensed under the Creative Commons CC0 1.0 Universal Public Domain Dedication
 
+\paper{
+  #(define page-breaking ly:page-turn-breaking)
+}
+
 \header {
   title = "Aria Sub Elevatione & Variations"
   composer = "Gottlieb Muffat (1690-1770)"
@@ -40,7 +44,6 @@ global = {
 ariaMelodyVoice = \relative c'' {
   \clef treble
   \global
-  \stemUp \slurUp
   \repeat volta 2 {
     as4 g8 f c'c,c g'
     f e f g e2
@@ -135,7 +138,6 @@ ariaSecondBassVoice = \relative c {
 primaMelodyVoice = \relative c'' {
   \clef treble
   \global
-  \stemUp \slurUp
   \repeat volta 2 {
     f,16 e f g as g as bes c g c g c, g' c g
     f e f g as f g f e f e d c8 r8
@@ -224,7 +226,6 @@ primaSecondBassVoice = \relative c {
       >>
     >>
   >>
-  % Layout block for formatting
   \layout {}
 }
 
@@ -232,7 +233,6 @@ secundaMelodyVoice = \relative c'' {
   \clef treble
   \key c \minor
   \time 12/8
-  \stemUp \slurUp
   \repeat volta 2 {
     f,8 g as g as f c' g c g c, g'
     f e f g as f e f g c,4.
@@ -323,6 +323,72 @@ secundaSecondBassVoice = \relative c {
       >>
     >>
   >>
-  % Layout block for formatting
+  \layout {}
+}
+
+tertiaMelodyVoice = \relative c'' {
+  \clef treble
+  \global
+  \stemUp \slurUp
+  \repeat volta 2 {
+    as4 g8 f c' c, c g'
+    f e f g e4 r4
+    g as g c
+    f8 g es d d4 g,
+    es'4. d8 c b c d
+    b4.\trill c8 c16 g c g e4
+  }
+
+  \repeat volta 2 {
+    c'4 des8 es as,4 bes8 c
+    des c bes as g4 es
+    as bes c bes8 as
+    g4.\trill as8 as4 r4
+    g as bes f
+    g8 as f g e4 c
+    c' as8 g f bes as g
+    as4 g8.\trill f16 f c f c a4
+  }
+}
+
+tertiaBassVoice = \relative c {
+  \clef bass
+  \global
+  \repeat volta 2 {
+    f16 c' f, c' e, c' f, c' es, g es g es g es g
+    des as' c, as' des, as' bes, bes' c, g' d g e g d g
+    c, c' c, c' f, c' f, c' es, c' es, c' es, g es g
+    b d, es g c, g' f a g b as c b d b g
+    c c, c' c, g' c, g' b, es g d f es g f as
+    g g, g' g, f' g, f' g, e'8 c g'16 e g c,
+  }
+
+  \repeat volta 2 {
+    as'16 es' as, es' g, bes g bes f c' f, c' es, g es g
+    des f as es des des' des, c' es, bes' es, bes' es, c' es, des'
+    f, c' f, c' es, es' es, es' as, es' as, es' des, des' des, c'
+    es, bes' es, c' es, des' es, des' as c as c g c f, c'
+    e, c' e, c' f, c' f, c' des, f des f des as' des, as'
+    bes, bes' c, as' des, as' bes, bes' c, g' des g e g des g
+    c, e c g' c, c' c, bes' des, as' bes, g' c, f c e
+    f c f f, c' bes c c, f4 c'16 a c f,
+  }
+}
+
+
+\score {
+  \header{ piece="Variatio tertia"}
+  <<
+    \new StaffGroup <<
+      \new Staff = "melodyAndHarmonyStaff" <<
+        \clef treble
+        \new Voice = "melody" { \tertiaMelodyVoice }
+      >>
+
+      \new Staff = "bassStaff" <<
+        \new Voice = "bass" { \tertiaBassVoice }
+      >>
+    >>
+  >>
   \layout {}
 }
