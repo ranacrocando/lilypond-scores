@@ -62,7 +62,7 @@ jobs:
         run: |
           # Find all .ly files in the specified directory and run LilyPond on each
           for file in *.ly; do
-            lilypond "$file"
+            lilypond -dembed-source-code "$file" 
           done
       - name: List files for debugging
         run: |
