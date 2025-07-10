@@ -3,6 +3,7 @@
 % this is based on
 % https://imslp.org/wiki/Special:ReverseLookup/299955 page 13-15
 % licensed under the Creative Commons CC0 1.0 Universal Public Domain Dedication
+% find the source code here: https://github.com/ranacrocando/lilypond-scores
 
 \paper{
   #(define page-breaking ly:page-turn-breaking)
@@ -24,11 +25,6 @@
           \with-url
           #"https://imslp.org/wiki/Special:ReverseLookup/299955"
           "Rudolf Walter & Ludwig Doblinger"
-          ; Find the source files: \bold \italic \typewriter {
-            \with-url
-            #"https://github.com/ranacrocando/lilypond-scores/blob/main/muffat-variations/"
-            "github.com/ranacrocando/lilypond-scores"
-          }
         }
       }
     }
