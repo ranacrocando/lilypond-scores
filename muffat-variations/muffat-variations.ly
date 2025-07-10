@@ -227,3 +227,102 @@ primaSecondBassVoice = \relative c {
   % Layout block for formatting
   \layout {}
 }
+
+secundaMelodyVoice = \relative c'' {
+  \clef treble
+  \key c \minor
+  \time 12/8
+  \stemUp \slurUp
+  \repeat volta 2 {
+    f,8 g as g as f c' g c g c, g'
+    f e f g as f e f g c,4.
+    g'8 c bes as g f g a b c d es
+    f g f es d c d es c b g d'
+    es g, es' d g, d' c b c c d es
+    b c d es g, b c g e c4 r8
+  }
+
+  \repeat volta 2 {
+    c'4. des4 es8 as,4. bes4 c8
+    des es c bes c as g4. es
+    as bes c bes8 c as
+    g4.(g4) g8 as4. r4.
+    g as bes f
+    g8 as g f g f e f g e c g'
+    c g c as bes g f bes c as bes g
+    as bes as g4.\trill f8 c bes as4.
+  }
+}
+
+secundaBassVoice = \relative c {
+  \clef bass
+  \key c \minor
+  \time 12/8
+  \stemUp
+  \slurUp
+  \repeat volta 2 {
+    c'2. g2.
+    as4. bes c g
+    c2. c
+    b4. c b2.
+    c4. g g2.
+    g4.( g4)  f8 e4 g8 e g c,
+  }
+
+  \repeat volta 2 {
+    es'2. des4. g,
+    as des4 c8 bes8 g as bes c des
+    c4. es es des4 c8
+    bes c des es bes des c4. r4.
+    c2. f,4. as
+    bes as g2.
+    e4. c' aes f(
+    f)( f8) f e f4. f8 c f,
+  }
+}
+
+secundaSecondBassVoice = \relative c {
+  \clef bass
+  \key c \minor
+  \time 12/8
+  \stemDown
+  \repeat volta 2 {
+    f2. es
+    des c4 d8 e4 d8
+    c4. f es2.
+    d4. c g'2.
+    c,4. b es c
+    g'g, c2.
+  }
+
+  \repeat volta 2 {
+    as'8 bes as g as g f g f es f es
+    des2. es
+    f8 g f es f g as bes as des,4.
+    es2. as8 bes as g as f
+    e d e f e f des c des des c des
+    bes2. c
+    c des
+    c f,
+  }
+}
+
+
+\score {
+  \header{ piece="Variatio secunda"}
+  <<
+    \new StaffGroup <<
+      \new Staff = "melodyAndHarmonyStaff" <<
+        \clef treble
+        \new Voice = "melody" { \secundaMelodyVoice }
+      >>
+
+      \new Staff = "bassStaff" <<
+        \new Voice = "bass" { \secundaBassVoice }
+        \new Voice = "basstwo" { \secundaSecondBassVoice }
+      >>
+    >>
+  >>
+  % Layout block for formatting
+  \layout {}
+}
