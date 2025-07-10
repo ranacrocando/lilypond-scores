@@ -9,7 +9,7 @@
 }
 
 \header {
-  title = "Aria Sub Elevatione & Variations"
+  title = "Aria sub Elevatione & Variations"
   composer = "Gottlieb Muffat (1690-1770)"
   opus = "Missa in F"
   tagline = \markup {
@@ -23,8 +23,8 @@
           Based on
           \with-url
           #"https://imslp.org/wiki/Special:ReverseLookup/299955"
-          "Rudolf Walter"
-          Find the source files: \bold \italic \typewriter {
+          "Rudolf Walter & Ludwig Doblinger"
+          ; Find the source files: \bold \italic \typewriter {
             \with-url
             #"https://github.com/ranacrocando/lilypond-scores/blob/main/muffat-variations/"
             "github.com/ranacrocando/lilypond-scores"
@@ -88,7 +88,7 @@ ariaBassVoice = \relative c {
     c2 f,4 as
     bes as g2
     e4 c' as f(
-    f) e f2
+    f) e f2\fermata
   }
 }
 
@@ -112,7 +112,7 @@ ariaSecondBassVoice = \relative c {
     es2 as8 as g f
     e4 f des2
     bes2 c
-    c des c f,\fermata
+    c des c f,
   }
 }
 
@@ -176,10 +176,9 @@ primaBassVoice = \relative c {
   \repeat volta 2 {
     es'2 des4 g,
     as des8 c bes4 c8 des
-
     c4 es es des8 c
-    bes4 des c2
-    c2 f,4 as
+    bes4 des c r
+    c2 f,4 bes
     bes as g2
     e4 c' as f(
     f) e f4 f
@@ -326,6 +325,12 @@ secundaSecondBassVoice = \relative c {
   \layout {}
 }
 
+twoWayFermata = { % https://lsr.di.unimi.it/LSR/Item?id=1162
+  \once \set Staff.caesuraType = #'((underlying-bar-line . "||"))
+  \once \set Staff.caesuraTypeTransform = ##f
+  \caesura ^\fermata _\fermata
+}
+
 tertiaMelodyVoice = \relative c'' {
   \clef treble
   \global
@@ -347,7 +352,7 @@ tertiaMelodyVoice = \relative c'' {
     g as bes f
     g8 as f g e4 c
     c' as8 g f bes as g
-    as4 g8.\trill f16 f c f c a4
+    as4 g8.\trill f16 f c f c a4 \twoWayFermata
   }
 }
 
@@ -358,7 +363,7 @@ tertiaBassVoice = \relative c {
     f16 c' f, c' e, c' f, c' es, g es g es g es g
     des as' c, as' des, as' bes, bes' c, g' d g e g d g
     c, c' c, c' f, c' f, c' es, c' es, c' es, g es g
-    b d, es g c, g' f a g b as c b d b g
+    b d, es g c, g' f a g b a c b d b g
     c c, c' c, g' c, g' b, es g d f es g f as
     g g, g' g, f' g, f' g, e'8 c g'16 e g c,
   }
@@ -371,7 +376,7 @@ tertiaBassVoice = \relative c {
     e, c' e, c' f, c' f, c' des, f des f des as' des, as'
     bes, bes' c, as' des, as' bes, bes' c, g' des g e g des g
     c, e c g' c, c' c, bes' des, as' bes, g' c, f c e
-    f c f f, c' bes c c, f4 c'16 a c f,
+    f c f f, c' bes c c, f4 c'16 a c f, \twoWayFermata
   }
 }
 
