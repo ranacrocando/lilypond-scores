@@ -189,9 +189,19 @@ pedalVoice = \relative c {
   a2 d,4 r4|
 
   r1 r1 r1 r1 r1 r1 r1 r1
+  
+  %second main theme
+  r8 r16 d,16 fis8 a d4 cis|
+  b2 a |
+  g fis|
+  e4\staccato d\staccato a'2|
+  fis2(b4) r4|
+  a(d4) r4|
+  cis2(fis4) gis|
+  a2 d,4 r
+  
 }
 
-% Define the staff system
 \score {
   <<
     \new PianoStaff <<
