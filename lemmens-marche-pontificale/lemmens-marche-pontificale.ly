@@ -118,8 +118,8 @@ melodyVoice = \relative c'' {
       <b b'(> <<a2 {a'4)  \times 2/3 {fis8\staccato g\staccato a\staccato}}>> |
       g4\staccato fis\staccato e2\staccato |
       cis4( e4 <b d fis g)>8.\staccato fis'16\staccato g8\staccato gis\staccato |
-      e4( g <b, d fis b)>8. a'16 b8 bis
-      gis4( b  <d, fis a d\staccato)>4
+      e4( g <b, d fis b\staccato)>8. a'16\staccato b8\staccato bis\staccato
+      gis4( b  <d, fis a d)>4
     }
     \new Voice = "harmony" { \relative c'
       \voiceTwo
