@@ -62,7 +62,7 @@ melodyVoice = \relative c'' {
   <cis eis gis b cis~>2 <e fis ais cis e>4\staccato <d fis b d>8\staccato <cis e a cis>\staccato|
   <b d gis b>4. <a cis e a>8 <a cis e a>4 r4|
 
-  <fis a d>2\staccato <a fis'>8.\staccato d16\staccato fis8\staccato a8\staccato|
+  <fis a d>2 <a fis'>8.\staccato d16\staccato fis8\staccato a8\staccato|
   <<
     \new Voice = "melody" { \relative c'
       \voiceOne
@@ -108,6 +108,32 @@ melodyVoice = \relative c'' {
     r4 cis'2 b4~|
     b8 a4 gis8 fis4 r
     } >>
+	
+  % second main theme
+    <fis a d>2 <a fis'>8.\staccato d16\staccato fis8\staccato a8\staccato|
+  <<
+    \new Voice = "melody" { \relative c'
+      \voiceOne
+      <d, d'(>2 <cis cis')>|
+      <b b'(> <<a2 {a'4)  \times 2/3 {fis8\staccato g\staccato a\staccato}}>> |
+      g4\staccato fis\staccato e2\staccato |
+      cis4( e4 <b d fis g)>8.\staccato fis'16\staccato g8\staccato gis\staccato |
+      e4( g <b, d fis b)>8. a'16 b8 bis
+      gis4( b  <d, fis a d\staccato)>4
+    }
+    \new Voice = "harmony" { \relative c'
+      \voiceTwo
+      fis4 g2 fis4 |
+      d e2 d4 |
+      <a cis>4 <a d> <a cis>2 |
+      <fis ais cis fis[>2 s2 |
+      <a cis e a>2 s2 |
+      <cis eis gis cis>2
+      s4
+    }
+  >>
+  <b d g>8\staccato <a d fis>\staccato |
+  <g a cis e>4. <fis a d>8 q4 r4
 }
 
 bassVoice = \relative c {
@@ -127,6 +153,18 @@ bassVoice = \relative c {
   %intermezzo 1
   a,2 b|
   a4 b cis a8. a16|
+  s1*6|
+  
+  % second main theme
+  d2\staccato  d2(|
+  d4) e2 fis4 |
+  <b, g'>4 cis2 d4|
+  s1 |
+  cis4 e d s4 |
+  e \clef violin g s2 |
+  gis4 b s2 |
+  s1
+
 }
 
 secondBassVoice = \relative c {
@@ -165,6 +203,16 @@ secondBassVoice = \relative c {
   fis4 e a2|
   ais4 fis8. fis16 b4 gis8. gis16|
   cis4 cis, fis r4|
+  
+  % second main theme
+  r8r16 d'16\staccato fis8\staccato a\staccato d4 cis |
+  b2 a |
+  g fis |
+  < e a e'>4  <a d fis> <a cis e>2 |
+  <fis ais cis> \clef violin b8. fis'16 g8 gis |
+  <a,( cis e>2 \clef violin <d) fis>8. a'16 b8 bis|
+  <cis,( eis gis>2 <fis) a>4 \clef bass <g, b d g> |
+  <g a cis e>4. <fis a d>8 q4 r4
 }
 
 pedalVoice = \relative c {
@@ -183,7 +231,7 @@ pedalVoice = \relative c {
   b2 a |
   g fis |
   e4\staccato d\staccato a'2 |
-  fis( b4) r4 |
+  fis2( b4) r4 |
   a2( d4) r4 |
   cis2( fis4) g\staccato |
   a2 d,4 r4|
@@ -196,8 +244,8 @@ pedalVoice = \relative c {
   g fis|
   e4\staccato d\staccato a'2|
   fis2(b4) r4|
-  a(d4) r4|
-  cis2(fis4) gis|
+  a2(d4) r4|
+  cis2(fis4) g|
   a2 d,4 r
   
 }
