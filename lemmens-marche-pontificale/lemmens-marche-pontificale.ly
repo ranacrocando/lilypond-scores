@@ -145,7 +145,7 @@ bassVoice = \relative c {
   d4) e2 fis4 |
   <b, g'>4 cis2 d4|
   s1 |
-  cis4 e d s4 |
+  cis4 e b s4 |
   e \clef violin g s2 |
   gis4 b s2 |
   s1
@@ -160,7 +160,7 @@ bassVoice = \relative c {
   d4) e2 fis4 |
   <b, g'>4 cis2 d4|
   s1 |
-  cis4 e d s4 |
+  cis4 e b s4 |
   e \clef violin g s2 |
   gis4 b s2 |
   s1
@@ -189,7 +189,7 @@ secondBassVoice = \relative c {
   b2 a |
   g fis |
   < e a e'>4  <a d fis> <a cis e>2 |
-  <fis ais cis> \clef violin b8. fis'16 g8 gis |
+  <fis ais cis> \clef violin d'8. fis16 g8 gis |
   <a, cis e>2 \clef violin <d fis>8. a'16 b8 bis|
   <eis, gis>2 <fis a>4 \clef bass <g, b d g> |
   <g a cis e>4. <fis a d>8 q4 r4
@@ -209,7 +209,7 @@ secondBassVoice = \relative c {
   b2 a |
   g fis |
   < e a e'>4  <a d fis> <a cis e>2 |
-  <fis ais cis> \clef violin b8. fis'16 g8 gis |
+  <fis ais cis> \clef violin d'8. fis16 g8 gis |
   <a,( cis e>2 \clef violin <d) fis>8. a'16 b8 bis|
   <cis,( eis gis>2 <fis) a>4 \clef bass <g, b d g> |
   <g a cis e>4. <fis a d>8 q4 r4
