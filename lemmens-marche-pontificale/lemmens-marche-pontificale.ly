@@ -236,7 +236,7 @@ pedalVoice = \relative c {
   cis2( fis4) g\staccato |
   a2 d,4 r4|
 
-  r1 r1 r1 r1 r1 r1 r1 r1
+  R1 R1 R1 R1 R1 R1 R1 R1
   
   %second main theme
   r8 r16 d,16 fis8 a d4 cis|
@@ -266,12 +266,14 @@ pedalVoice = \relative c {
       >>
     >>
     \new Staff = "pedalStaff" <<
+	
            \set Staff.midiInstrument = "church organ"
       \new Voice = "pedal" { \pedalVoice }
     >>
   >>
 
-  % Layout block for formatting
-  \layout {}
+  \layout {\context {
+    \Staff \RemoveEmptyStaves
+  }}
   \midi{}
 }
