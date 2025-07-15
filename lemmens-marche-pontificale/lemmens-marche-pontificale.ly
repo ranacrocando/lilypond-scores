@@ -64,7 +64,8 @@ melodyVoice = \relative c'' {
 
   <fis a d>2 <a fis'>8.\staccato d16\staccato fis8\staccato a8\staccato|
   <<
-    \new Voice = "melody" { \relative c'
+    \new Voice = "melody" {
+      \relative c'
       \voiceOne
       <d, d'>2 <cis cis'>|
       <b b'> <<a2 {a'4  \times 2/3 {fis8\staccato g\staccato a\staccato}}>> |
@@ -73,7 +74,8 @@ melodyVoice = \relative c'' {
       e4( g <b, d fis b)>8. a'16 b8 bis
       gis4( b  <d, fis a d\staccato)>4
     }
-    \new Voice = "harmony" { \relative c'
+    \new Voice = "harmony" {
+      \relative c'
       \voiceTwo
       fis4 g2 fis4 |
       d e2 d4 |
@@ -91,28 +93,32 @@ melodyVoice = \relative c'' {
   fis2 d4 \times 2/3 {e8\staccato( fis\staccato g\staccato)} |
   a4 g8 fis e2
   <<
-    {\stemDown
-     d2. g4~ |
-     g4 fis2 \times 2/3 {e8( d cis)} |
-     c2 b |
-     a4 b cis cis8. cis16 |
-     fis4 e d2 |
-     cis4 b a r
+    {
+      \stemDown
+      d2. g4~ |
+      g4 fis2 \times 2/3 {e8( d cis)} |
+      c2 b |
+      a4 b cis cis8. cis16 |
+      fis4 e d2 |
+      cis4 b a r
     }
-  \\
-  { \stemUp
-    r4 fis'8. fis16 b2 |
-    a2 g |
-    fis2 d4 \times 2/3 {e8( fis g)} |
-    a4 g8 fis e2 |
-    r4 cis'2 b4~|
-    b8 a4 gis8 fis4 r
-    } >>
-	
+    \\
+    {
+      \stemUp
+      r4 fis'8. fis16 b2 |
+      a2 g |
+      fis2 d4 \times 2/3 {e8( fis g)} |
+      a4 g8 fis e2 |
+      r4 cis'2 b4~|
+      b8 a4 gis8 fis4 r
+    }
+  >>
+
   % second main theme
-    <fis a d>2 <a fis'>8.\staccato d16\staccato fis8\staccato a8\staccato|
+  <fis a d>2 <a fis'>8.\staccato d16\staccato fis8\staccato a8\staccato|
   <<
-    \new Voice = "melody" { \relative c'
+    \new Voice = "melody" {
+      \relative c'
       \voiceOne
       <d, d'(>2 <cis cis')>|
       <b b'(> <<a2 {a'4)  \times 2/3 {fis8\staccato g\staccato a\staccato}}>> |
@@ -121,7 +127,8 @@ melodyVoice = \relative c'' {
       e4( g <b, d fis b\staccato)>8. a'16\staccato b8\staccato bis\staccato
       gis4( b  <d, fis a d)>4
     }
-    \new Voice = "harmony" { \relative c'
+    \new Voice = "harmony" {
+      \relative c'
       \voiceTwo
       fis4 g2 fis4 |
       d e2 d4 |
@@ -154,7 +161,7 @@ bassVoice = \relative c {
   a,2 b|
   a4 b cis a8. a16|
   s1*6|
-  
+
   % second main theme
   d2\staccato  d2(|
   d4) e2 fis4 |
@@ -203,7 +210,7 @@ secondBassVoice = \relative c {
   fis4 e a2|
   ais4 fis8. fis16 b4 gis8. gis16|
   cis4 cis, fis r4|
-  
+
   % second main theme
   r8r16 d'16\staccato fis8\staccato a\staccato d4 cis |
   b2 a |
@@ -237,7 +244,7 @@ pedalVoice = \relative c {
   a2 d,4 r4|
 
   R1 R1 R1 R1 R1 R1 R1 R1
-  
+
   %second main theme
   r8 r16 d,16 fis8 a d4 cis|
   b2 a |
@@ -247,33 +254,35 @@ pedalVoice = \relative c {
   a2(d4) r4|
   cis2(fis4) g|
   a2 d,4 r
-  
+
 }
 
 \score {
   <<
     \new PianoStaff <<
       \new Staff = "up" <<
-       \set Staff.midiInstrument = "church organ"
+        \set Staff.midiInstrument = "church organ"
         \clef treble
         \new Voice = "melody" { \melodyVoice }
       >>
       \new Staff = "down" <<
-             \set Staff.midiInstrument = "church organ"
+        \set Staff.midiInstrument = "church organ"
         \clef bass
         \new Voice = "bass" { \bassVoice }
         \new Voice = "basstwo" { \secondBassVoice }
       >>
     >>
     \new Staff = "pedalStaff" <<
-	
-           \set Staff.midiInstrument = "church organ"
+
+      \set Staff.midiInstrument = "church organ"
       \new Voice = "pedal" { \pedalVoice }
     >>
   >>
 
-  \layout {\context {
-    \Staff \RemoveEmptyStaves
-  }}
+  \layout {
+    \context {
+      \Staff \RemoveEmptyStaves
+    }
+  }
   \midi{}
 }
