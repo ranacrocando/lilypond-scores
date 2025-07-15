@@ -87,7 +87,7 @@ melodyVoice = \relative c'' {
     }
   >>
   <b d g>8\staccato <a d fis>\staccato |
-  <g a cis e>4. <fis a d>8 q4 r4
+  <g a cis e>4. <fis a d>8 q4 r4 | \bar ".."
 
   % intermezzo 1
   fis2 d4 \times 2/3 {e8\staccato( fis\staccato g\staccato)} |
@@ -112,7 +112,7 @@ melodyVoice = \relative c'' {
       r4 cis'2 b4~|
       b8 a4 gis8 fis4 r
     }
-  >>
+  >> \bar ".."
 
   % second main theme
   <fis a d>2 <a fis'>8.\staccato d16\staccato fis8\staccato a8\staccato|
@@ -140,7 +140,7 @@ melodyVoice = \relative c'' {
     }
   >>
   <b d g>8\staccato <a d fis>\staccato |
-  <g a cis e>4. <fis a d>8 q4 r4
+  <g a cis e>4. <fis a d>8 q4 r4 | \bar ".."
 }
 
 bassVoice = \relative c {
@@ -199,7 +199,7 @@ secondBassVoice = \relative c {
   <fis ais cis> \clef violin d'8. fis16 g8 gis |
   <a, cis e>2 \clef violin <d fis>8. a'16 b8 bis|
   <eis, gis>2 <fis a>4 \clef bass <g, b d g> |
-  <g a cis e>4. <fis a d>8 q4 r4
+  <g a cis e>4. <fis a d>8 q4 r4 |
 
   %intermezzo 1
   d,2 g|
@@ -244,7 +244,7 @@ pedalVoice = \relative c {
   a2 d,4 r4|
 
   R1 R1 R1 R1 R1 R1 R1 R1
-
+  
   %second main theme
   r8 r16 d,16 fis8 a d4 cis|
   b2 a |
