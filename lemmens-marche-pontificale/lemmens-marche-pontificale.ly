@@ -244,7 +244,7 @@ pedalVoice = \relative c {
   a2 d,4 r4|
 
   R1 R1 R1 R1 R1 R1 R1 R1
-  
+
   %second main theme
   r8 r16 d,16 fis8 a d4 cis|
   b2 a |
@@ -255,7 +255,33 @@ pedalVoice = \relative c {
   cis2(fis4) g|
   a2 d,4 r
 
+  % second interlude
+  r4 b-! fis-! r |
+  r4 b-! fis-! r |
+  R1 |R1|
+  r4 b-! fis-! r |
+  r4 b-! cis-! r |
+  r4 d b cis|
+  r4 d b cis |
+  r4 a ais b |
+  c cis d dis |
+  e r4 r2|
+  R1|
+  r4 b-! fis-! r |
+  r4 b-! fis-! r |
+  r4 \tuplet 3/2 {b' bes8} \tuplet 3/2 {a4 g8} \tuplet 3/2 {fis4 e8}|
+  \tuplet 3/2 {d4 cis8} \tuplet 3/2 {b4 g8} \tuplet 3/2 {fis4-! r8} \tuplet 3/2 {fis'4-! r8}|
+  r4 b,-! fis-! r |
+  r4 b-! fis-! r |
+  r4 d' e fis|
+  g1|
+  r8. fis,16(g8.) a16( bes2)(|
+  a8.) gis16( a8.) b16( c2)(|
+  b8.) ais16( b8.) cis16( d2)(|
+  cis2 a|
+  g e
 }
+
 
 \score {
   <<
