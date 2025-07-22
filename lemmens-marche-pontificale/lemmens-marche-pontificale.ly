@@ -277,7 +277,7 @@ pedalVoice = \relative c {
   g1|
   r8. fis,16(g8.) a16( bes2)(|
   a8.) gis16( a8.) b16( c2)(|
-  b8.) ais16( b8.) cis16( d2)(|
+  b8.) ais16( b8.) cis16( d2)|
   cis2 a|
   g e
 }
