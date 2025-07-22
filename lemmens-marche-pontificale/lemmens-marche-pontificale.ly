@@ -141,7 +141,7 @@ melodyVoice = \relative c'' {
   >>
   <b d g>8\staccato <a d fis>\staccato |
   <g a cis e>4. <fis a d>8 q4 r4 | \bar ".."
-  
+
   % second interlude
   b2( \times 2/3 {cis8-!) d-! e-!} \times 2/3{d4-! cis8-!} |
   b2( \times 2/3 {cis8-!) d-! e-!} \times 2/3{d4-! cis8(} |
@@ -155,21 +155,21 @@ melodyVoice = \relative c'' {
   g8.) fis16 g8. fis16 g8. g16 b8. a16|
   g4 e8 c4 c8 e g|
   \times 2/3{c4 g8}\times 2/3{e'4 c8}\times 2/3{g'4 e8}\times 2/3{d8 e a,}|
-    b2( \times 2/3 {cis8-!) d-! e-!} \times 2/3{d4-! cis8-!} |
-	  b2( \times 2/3 {cis8-!) e-! d-!} \times 2/3{cis4-! d8-!(} |
-\times 2/3 {b4 cis8} \times 2/3 {d4 e8} \times 2/3 {fis4 e8} \times 2/3 {a4 g8}|
+  b2( \times 2/3 {cis8-!) d-! e-!} \times 2/3{d4-! cis8-!} |
+  b2( \times 2/3 {cis8-!) e-! d-!} \times 2/3{cis4-! d8-!(} |
+  \times 2/3 {b4 cis8} \times 2/3 {d4 e8} \times 2/3 {fis4 e8} \times 2/3 {a4 g8}|
   \times 2/3 {fis4 a8} \times 2/3 {b4 e,8} \times 2/3 {fis4 cis8)} \times 2/3 {\grace{e8(} d4-!) cis8-!}|
   b2 \times 2/3 {cis8-! d-! e-!} \times 2/3{d4-! cis8-!} |
-    b2 \times 2/3 {cis8-! fis-! e-!} \times 2/3{d4-! cis8-!} |
-	c4 a' g d|
-	dis8. e16 b'8. a16 g8. d16 f8. e16|
-	e2( e8.) e16 g8. fis16|
-	fis2(fis8.) fis16 a8. g16 |
-	gis2(gis8.) gis16 b8. a16~|
-	a8. a16 b8. a16~a8. a16 b8. a16|
-	b8.a16b8.a16
-b8.a16 b8.a16|
- }
+  b2 \times 2/3 {cis8-! fis-! e-!} \times 2/3{d4-! cis8-!} |
+  c4 a' g d|
+  dis8. e16 b'8. a16 g8. d16 f8. e16|
+  e2( e8.) e16 g8. fis16|
+  fis2(fis8.) fis16 a8. g16 |
+  gis2(gis8.) gis16 b8. a16~|
+  a8. a16 b8. a16~a8. a16 b8. a16|
+  b8.a16b8.a16
+  b8.a16 b8.a16|
+}
 
 bassVoice = \relative c {
   \global
