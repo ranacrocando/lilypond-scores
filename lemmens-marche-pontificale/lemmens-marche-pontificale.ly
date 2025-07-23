@@ -231,6 +231,13 @@ bassVoice = \relative c {
   e \clef violin g s2 |
   gis4 b s2 |
   s1
+  % second interlude
+  b,2 \times 2/3 {cis8-! d-! e-!} \times 2/3{d4 cis8} |
+  b2 \times 2/3 {cis8 d e} \times 2/3{d4 cis8} |
+    
+	\times 2/3 {b4 cis8} \times 2/3 {\showStaffSwitch\change Staff = "up"  \stemDown \tupletDown d4 e8} \times 2/3 {fis4 e8} \times 2/3 {a4 g8}|
+
+      \times 2/3 {fis4 a8} \times 2/3 {b4 e,8} \times 2/3 {fis4 cis8} \times 2/3  {\showStaffSwitch\change Staff = "down" \stemUp \tupletUp \appoggiatura{e8} d4 cis8}|
 
 }
 
