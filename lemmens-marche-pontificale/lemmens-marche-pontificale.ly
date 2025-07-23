@@ -150,7 +150,7 @@ melodyVoice = \relative c'' {
       b2( \times 2/3 {cis8-!) d-! e-!} \times 2/3{d4-! cis8-!} |
       b2( \times 2/3 {cis8-!) d-! e-!} \times 2/3{d4-! cis8(} |
       \times 2/3 {b4 cis8} \times 2/3 {d4 e8} \times 2/3 {fis4 e8} \times 2/3 {a4 g8}|
-      \times 2/3 {fis4 a8} \times 2/3 {b4 e,8} \times 2/3 {fis4 cis8)} \times 2/3 {\grace{e8(} d4-!) cis8-!}|
+      \times 2/3 {fis4 a8} \times 2/3 {b4 e,8} \times 2/3 {fis4 cis8)} \times 2/3 {\appoggiatura{e8} d4-! cis8-!}|
       b2( \times 2/3 {cis8-!) d-! e-!} \times 2/3{d4 cis8} |
       b2 \times 2/3 {gis8-! a-! b-!} \times 2/3{a4-! gis8(} |
       \times 2/3{cis4 a8} \times 2/3{fis4 gis8} \times 2/3{a4 b8} \times 2/3{gis4 d'8}|
@@ -162,7 +162,7 @@ melodyVoice = \relative c'' {
       b2( \times 2/3 {cis8-!) d-! e-!} \times 2/3{d4-! cis8-!} |
       b2( \times 2/3 {cis8-!) e-! d-!} \times 2/3{cis4-! d8-!(} |
       \times 2/3 {b4 cis8} \times 2/3 {d4 e8} \times 2/3 {fis4 e8} \times 2/3 {a4 g8}|
-      \times 2/3 {fis4 a8} \times 2/3 {b4 e,8} \times 2/3 {fis4 cis8)} \times 2/3 {\grace{e8(} d4-!) cis8-!}|
+      \times 2/3 {fis4 a8} \times 2/3 {b4 e,8} \times 2/3 {fis4 cis8)} \times 2/3 {\appoggiatura{e8} d4-! cis8-!}|
       b2 \times 2/3 {cis8-! d-! e-!} \times 2/3{d4-! cis8-!} |
       b2 \times 2/3 {cis8-! fis-! e-!} \times 2/3{d4-! cis8-!} |
       c4 a' g d|
