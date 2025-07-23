@@ -143,6 +143,10 @@ melodyVoice = \relative c'' {
   <g a cis e>4. <fis a d>8 q4 r4 | \bar ".."
 
   % second interlude
+  <<
+  \new Voice = "melody" {
+      \relative c'
+      \voiceOne
   b2( \times 2/3 {cis8-!) d-! e-!} \times 2/3{d4-! cis8-!} |
   b2( \times 2/3 {cis8-!) d-! e-!} \times 2/3{d4-! cis8(} |
   \times 2/3 {b4 cis8} \times 2/3 {d4 e8} \times 2/3 {fis4 e8} \times 2/3 {a4 g8}|
@@ -169,6 +173,34 @@ melodyVoice = \relative c'' {
   a8. a16 b8. a16~a8. a16 b8. a16|
   b8.a16b8.a16
   b8.a16 b8.a16|
+  }
+  \new Voice = "harmony" {
+      \relative c'
+      \voiceTwo
+	  r4 <d,, fis>-! <fis ais> r4|
+	  r4 <d fis>-! <fis ais> r4|
+	  s1 |s1|
+	  r4 <d fis>-! <fis ais> r4|
+	  r4 <d fis>-! <cis eis> r4|
+	  r4 d fis eis |
+	  r4 d fis eis|
+	  r4 e es d|
+	  c ais b2 |
+	  s1|s1|
+	  r4 <d fis>-! <fis ais> r4|
+	  r4 <d fis>-! <fis ais> r4|
+	  s1|s1|
+	  r4 <d fis>-! <fis ais> r4|
+	  r4 <d fis> <fis ais> r4|
+	  c'1~|
+	  c2. b4 |
+	  <g~ c>2 <g cis>|
+	  <a~ d> <a dis>|
+	  <b~ e> <b f'>|
+	  <e g>2 <cis~ e~ g~>2|
+	  <cis e g>1|
+	  }
+  >>
 }
 
 bassVoice = \relative c {
