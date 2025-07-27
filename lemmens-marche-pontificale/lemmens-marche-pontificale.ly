@@ -157,7 +157,7 @@ melodyVoice = \relative c'' {
       \times 2/3{cis4 a8} \times 2/3{fis4 gis8} \times 2/3{a4 b8} \times 2/3{gis4 a8} |
       g1)(|
       g8.) fis16 g8. fis16 g8. g16 b8. a16|
-      g4 e8 c4 c8 e g|
+      \times 2/3{g4 e8} \times 2/3{c4 g8} \times 2/3{e4 g8} \times 2/3{c8 e g}|
       \times 2/3{c4 g8}\times 2/3{e'4 c8}\times 2/3{g'4 e8}\times 2/3{d8 e a,}|
       b2( \times 2/3 {cis8-!) d-! e-!} \times 2/3{d4-! cis8-!} |
       b2( \times 2/3 {cis8-!) e-! d-!} \times 2/3{cis4-! d8-!(} |
@@ -238,7 +238,23 @@ bassVoice = \relative c {
 	\times 2/3 {b4 cis8} \times 2/3 {\showStaffSwitch\change Staff = "up"  \stemDown \tupletDown d4 e8} \times 2/3 {fis4 e8} \times 2/3 {a4 g8}|
 
       \times 2/3 {fis4 a8} \times 2/3 {b4 e,8} \times 2/3 {fis4 cis8} \times 2/3  {\showStaffSwitch\change Staff = "down" \stemUp \tupletUp \appoggiatura{e8} d4 cis8}|
-
+	    b2 \times 2/3 {cis8-! d-! e-!} \times 2/3{d4 cis8} |
+		  b2 \times 2/3 {gis8-! a-! b-!} \times 2/3{a4 gis8} |
+		  \times 2/3{cis4 a8}\times 2/3{fis4 gis8}\times 2/3{a4 b8}\times 2/3{gis4 d'8}|
+		  \times 2/3{cis4 a8}\times 2/3{fis4 gis8}\times 2/3{a4 b8}\times 2/3{gis4 a8}|
+		  g1~|g1~|
+		  \times 2/3{g4 e8}\times 2/3{c4 g8}\times 2/3{e4 g8} \times 2/3{c8 e g8}|
+		        \times 2/3{c4 g8}\times 2/3{e'4 c8}\times 2/3{g'4 e8}\times 2/3{d8 e a,}|
+b2 \times 2/3 {cis8-! d-! e-!} \times 2/3{d4 cis8} |
+b2 \times 2/3 {cis8 e d} \times 2/3{cis4 d8} |
+      \clef treble \times 2/3 {b4 cis8} \times 2/3 {d4 e8} \times 2/3 {fis4 e8} \times 2/3 {a4 g8}|
+      \times 2/3 {fis4 a8} \times 2/3 {b4 e,8} \times 2/3 {fis4 cis8} \times 2/3 {\appoggiatura{e8} d4-! cis8-!}|
+      \clef bass b2 \times 2/3 {cis8 d e} \times 2/3{d4 cis8} |
+      b2 \times 2/3 {cis8-! fis-! e-!} \times 2/3{d4 cis8} |
+	  c1~|c4 e d\showStaffSwitch\change Staff = "up" \stemDown g|
+	  s1 s1 s1 s1|
+	  b8.a16b8.a16b8.a16b8.a16|
+	  \change Staff = "down" \stemUp
 }
 
 secondBassVoice = \relative c {
@@ -287,6 +303,28 @@ secondBassVoice = \relative c {
   <a,( cis e>2 \clef violin <d) fis>8. a'16 b8 bis|
   <cis,( eis gis>2 <fis) a>4 \clef bass <g, b d g> |
   <g a cis e>4. <fis a d>8 q4 r4
+  
+  % second interlude
+  r4 <d fis>-! <fis ais> r4|
+      r4 <d fis>-! <fis ais> r4|
+      s1 |s1|
+	    r4 <d fis>-! <fis ais> r4|
+      r4 <d fis>-! <cis eis> r4|
+      s1 |s1|
+	  r4 cis2 <d f>4|
+	  es e f fis|
+	  s1|s1|
+	  r4 <d fis>-! <fis ais> r4|
+      r4 <d fis>-! <fis ais> r4|
+      s1 |s1|
+	  r4 <d fis>-! <fis ais> r4|
+      r4 <d fis>-! <fis ais> r4|
+	  r4 fis g a |
+	  g1|
+	  r8. fis16(g8.) a16(bes2)(|
+	  a8.) gis16(a8.) b16(c2)(|
+	  b8.) ais16(b8.) cis16(d2)|
+	  cis2~<a~ cis~> |<g~ a~ cis~> <e g a cis>
 }
 
 pedalVoice = \relative c {
