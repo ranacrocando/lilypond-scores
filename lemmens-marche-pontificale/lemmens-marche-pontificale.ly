@@ -274,6 +274,13 @@ bassVoice = \relative c {
   <g, c e g>2  r8. c,16 e8-! g-!|
   <f~ a~ c~>2 <f a c>4 <d f g b>-!
   <e g c>-! <e g c>8. <e g c>16 <f a c>4 <f a c>|
+  <c e g c> \times 2/3{<e g c>8<e g c>8<e g c>8} <f a c>4 <g c es>|
+  <fis a d>4 <fis a d>8. <fis a d>16 <g bes d>4 <g bes d>|
+  <d fis a d> \times 2/3{<fis a d>8<fis a d>8<fis a d>8} <g bes d>4 <a d f>|
+  <gis b e> <gis b e>8. <gis b e>16 <a c e>4 <a c e>4|
+  <e gis b e> \times 2/3{<gis b e>8<gis b e>8<gis b e>8} <a c e>4 <gis b e>8. <gis b e>16|
+<a c e>4 <gis b e>8. <gis b e>16 <a c e>4 <gis b e>8. <gis b e>16|
+<a~ c~ es~ g(>2<a c es f)>8 r8 r4|  
 }
 
 secondBassVoice = \relative c {
