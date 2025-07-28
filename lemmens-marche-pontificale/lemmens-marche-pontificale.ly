@@ -255,7 +255,25 @@ bassVoice = \relative c {
   c1~|c4 e d\showStaffSwitch\change Staff = "up" \stemDown g|
   s1 s1 s1 s1|
   b8.a16b8.a16b8.a16b8.a16|
-  \change Staff = "down" \stemUp
+  \hideStaffSwitch\change Staff = "down" \stemUp
+  % third main theme
+  d,2(d2)(|
+  d4) e2 fis4 |
+  <b, g'>4 cis2 d4|
+  s1 |
+  cis4 e <b d>4 r |
+  e4 g <d fis> r |
+  \clef treble
+  gis4 b fis2 |
+  <e gis>4. <a, cis e>8 <a cis e>4 r4|
+  \clef bass
+  
+  % third interlude
+  r2 r8. d,16 f8-! a-!|
+  <g~ bes~ d~>2 <g bes d>8. g16 bes8-! d-!|
+  <g, c e g>2  r8. c,16 e8-! g-!|
+  <f~ a~ c~>2 <f a c>4 <d f g b>-!
+  <e g c>-! <e g c>8. <e g c>16 <f a c>4 <f a c>|
 }
 
 secondBassVoice = \relative c {
@@ -385,7 +403,31 @@ pedalVoice = \relative c {
   a8.) gis16( a8.) b16( c2)(|
   b8.) ais16( b8.) cis16( d2)|
   cis2 a|
-  g e
+  g e|
+  
+  %third main theme
+  r8. d16-! fis8-! a-! d4 cis|
+  b2 a |
+  g fis|
+  e4( d  a'2)|
+  fis2(b4) r4|
+  a2(d4) r4|
+  cis2(fis4) b,|
+  e2 a,4 \tuplet 3/2{g'8 f e}
+  
+  %third interlude
+  d2( d8.) c16 bes8 a|
+  g2(g8.)  f'16 e8 d8|
+  c2(c8.) bes16 a8 g8|
+  f4 a d g,|
+  c4 r4 r4 f,|
+  c' r4 r4 c |
+  d r4 r4 g,|
+  d' r4 r4 d|
+  e r4 r4 a,|
+  e' r4 r2|
+  r1 | r1|
+
 }
 
 
