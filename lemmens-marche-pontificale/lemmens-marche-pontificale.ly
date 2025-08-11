@@ -202,6 +202,33 @@ melodyVoice = \relative c'' {
     }
   >>
   \bar ".."
+  % third main theme
+  <fis, a d>2 <a fis'>8.-! d16-! fis8-! a8-!|
+  <<
+    \new Voice = "melody" {
+      \relative c'
+      \voiceOne
+      <d, d'>2 <cis cis'>|
+      <b b'> <<a2 {a'4  \times 2/3 {d,8-! e-! fis-!}}>> |
+      g4-! fis-! e2-! |
+      cis4( e4 <b d fis g)>8.-! fis'16-! g8-! gis-! |
+      e4( g <b, d fis b\staccato)>8. a'16\staccato b8\staccato bis\staccato
+      gis4( b  <e, fis ais e')>4
+    }
+    \new Voice = "harmony" {
+      \relative c'
+      \voiceTwo
+      fis4 g2 fis4 |
+      d e2 d4 |
+      <a cis>4 <a d> <a cis>2 |
+      <fis ais cis fis[>2 s2 |
+      <a cis e a>2 s2 |
+      <cis eis gis cis>2
+      s4
+    }
+  >>
+  <d fis d'>8-! <cis e cis'>-! |
+  <b d e b'>4. <a cis e>8 q4 r4 | \bar ".."
 }
 
 bassVoice = \relative c {
@@ -261,7 +288,7 @@ bassVoice = \relative c {
   d4) e2 fis4 |
   <b, g'>4 cis2 d4|
   s1 |
-  cis4 e <b d>4 r |
+  cis4 e <b d> r |
   e4 g <d fis> r |
   \clef treble
   gis4 b fis2 |
@@ -351,6 +378,16 @@ secondBassVoice = \relative c {
   a8.) gis16(a8.) b16(c2)(|
   b8.) ais16(b8.) cis16(d2)|
   cis2~<a~ cis~> |<g~ a~ cis~> <e g a cis>
+  
+  % third main theme
+  r8. d16-! fis8-! a-! d4 cis |
+  b2 a |
+  g fis |
+  < a cis e>4  <a d fis> <a cis e>2 |
+  <fis ais cis> \clef violin g'8. fis16 g8 gis |
+  <a, cis e>2 \clef violin b'8. a16 b8 bis|
+  <cis, eis gis>2 ais'4 a |
+  s1
 }
 
 pedalVoice = \relative c {
