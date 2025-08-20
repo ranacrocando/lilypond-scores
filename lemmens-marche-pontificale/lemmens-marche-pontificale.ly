@@ -246,7 +246,7 @@ melodyVoice = \relative c'' {
   <e g c e>4-! <g, bes c>8.-! q16-! <f a c>4-! <f a c f>4-! |
   <e g c e>4 \tuplet 3/2{<g bes c>8 q q} <f a c>4 <g c es>-!|
   <fis a d>-! <a c d>8. q16 <g bes d>4-! <g bes d g>-!|
-  <f a d f>-! \tuplet 3/2{<a c d>8 q q} <g bes d>4 <a d f>-!|
+  <fis a d fis>-! \tuplet 3/2{<a c d>8 q q} <g bes d>4 <a d f>-!|
   <gis b e>4-! <b d e>8. q16 <a c e>4-! <a c e a>-!|
   <gis b e gis>-!  \tuplet 3/2{<b d e>8 q q} <a c e>4-! <b d e>8. q16|
   <a c e>4-! <b d e>8. q16 <a c e>4-! <b d e>8. q16|
