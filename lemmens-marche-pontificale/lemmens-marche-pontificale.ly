@@ -229,20 +229,20 @@ melodyVoice = \relative c'' {
   >>
   <d fis d'>8-! <cis e cis'>-! |
   <b d e b'>4. <a cis e>8 q4 r4 | \bar ".."
-  
+
   % third interlude
-  r8. <f a d>16-! <a d f>8-! <d f a>-! 
+  r8. <f a d>16-! <a d f>8-! <d f a>-!
   <<
     \new Voice { \voiceOne <d~ d'~>2 | <d d'>8.-! <c c'>16-! }
-	{\voiceOne <f a>2 | <g bes>4 }
-	>>
-	<bes, bes'>8-! <a a'>8-! <bes d g>2|
-  r8. c16-! <c e>8-! <c e g>-! 
+    {\voiceOne <f a>2 | <g bes>4 }
+  >>
+  <bes, bes'>8-! <a a'>8-! <bes d g>2|
+  r8. c16-! <c e>8-! <c e g>-!
   <<
     \new Voice { \voiceOne <c~ c'~>2 | <c c'>8.-! <bes bes'>16-! }
-	{\voiceOne <e g>2 | <f a>4 }
-	>>
-	<a, a'>8-! <g g'>8-! <f f'>4-! <f' g b d f>-! | %the last highest note is a fis in my template but I guess it should be f making it a clear g7 
+    {\voiceOne <e g>2 | <f a>4 }
+  >>
+  <a, a'>8-! <g g'>8-! <f f'>4-! <f' g b d f>-! | %the last highest note is a fis in my template but I guess it should be f making it a clear g7
 }
 
 bassVoice = \relative c {
