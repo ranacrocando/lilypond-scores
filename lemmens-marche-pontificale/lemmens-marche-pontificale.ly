@@ -241,7 +241,7 @@ bassVoice = \relative c {
   <b, g'>4 cis2 d4|
   s1 |
   \clef violin cis4 e d8. fis16 g8 gis |
-  e4 g fis8. a16 b8 bis | 
+  e4 g fis8. a16 b8 bis |
   gis4 b a s4 |
   s1
 
@@ -283,7 +283,7 @@ bassVoice = \relative c {
   s1 s1 s1 s1|
   b8.a16b8.a16b8.a16b8.a16|
   \hideStaffSwitch\change Staff = "down" \stemUp
-  
+
   % third main theme
   d,2(d2)(|
   d4) e2 fis4 |
@@ -295,7 +295,7 @@ bassVoice = \relative c {
   gis4 b fis2 |
   <e gis>4. <a, cis e>8 <a cis e>4 r4|
   \clef bass
-  
+
   % third interlude
   r2 r8. d,16 f8-! a-!|
   <g~ bes~ d~>2 <g bes d>8. g16 bes8-! d-!|
@@ -307,8 +307,8 @@ bassVoice = \relative c {
   <d fis a d> \times 2/3{<fis a d>8<fis a d>8<fis a d>8} <g bes d>4 <a d f>|
   <gis b e> <gis b e>8. <gis b e>16 <a c e>4 <a c e>4|
   <e gis b e> \times 2/3{<gis b e>8<gis b e>8<gis b e>8} <a c e>4 <gis b e>8. <gis b e>16|
-<a c e>4 <gis b e>8. <gis b e>16 <a c e>4 <gis b e>8. <gis b e>16|
-<a~ c~ es~ g(>2<a c es f)>8 r8 r4|  
+  <a c e>4 <gis b e>8. <gis b e>16 <a c e>4 <gis b e>8. <gis b e>16|
+  <a~ c~ es~ g(>2<a c es f)>8 r8 r4|
 }
 
 secondBassVoice = \relative c {
@@ -379,7 +379,7 @@ secondBassVoice = \relative c {
   a8.) gis16(a8.) b16(c2)(|
   b8.) ais16(b8.) cis16(d2)|
   cis2~<a~ cis~> |<g~ a~ cis~> <e g a cis>
-  
+
   % third main theme
   r8. d16-! fis8-! a-! d4 cis |
   b2 a |
@@ -449,7 +449,7 @@ pedalVoice = \relative c {
   b8.) ais16( b8.) cis16( d2)|
   cis2 a|
   g e|
-  
+
   %third main theme
   r8. d16-! fis8-! a-! d4 cis|
   b2 a |
@@ -459,7 +459,7 @@ pedalVoice = \relative c {
   a2(d4) r4|
   cis2(fis4) b,|
   e2 a,4 \tuplet 3/2{g'8 f e}
-  
+
   %third interlude
   d2( d8.) c16 bes8 a|
   g2(g8.)  f'16 e8 d8|
