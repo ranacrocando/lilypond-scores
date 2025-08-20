@@ -283,13 +283,14 @@ bassVoice = \relative c {
   s1 s1 s1 s1|
   b8.a16b8.a16b8.a16b8.a16|
   \hideStaffSwitch\change Staff = "down" \stemUp
+  
   % third main theme
   d,2(d2)(|
   d4) e2 fis4 |
   <b, g'>4 cis2 d4|
   s1 |
-  cis4 e <b d> r |
-  e4 g <d fis> r |
+  cis4 e d8.  fis16 g8 gis |
+  e4 g fis8. a16 b8 bis |
   \clef treble
   gis4 b fis2 |
   <e gis>4. <a, cis e>8 <a cis e>4 r4|
@@ -384,9 +385,9 @@ secondBassVoice = \relative c {
   b2 a |
   g fis |
   < a cis e>4  <a d fis> <a cis e>2 |
-  <fis ais cis> \clef violin g'8. fis16 g8 gis |
-  <a, cis e>2 \clef violin b'8. a16 b8 bis|
-  <cis, eis gis>2 ais'4 a |
+  <fis ais cis>2 \clef violin b4 s4 |
+  <a cis e>2 \clef violin d4 s4|
+  <cis eis gis>2 ais'4 a |
   s1
 }
 
