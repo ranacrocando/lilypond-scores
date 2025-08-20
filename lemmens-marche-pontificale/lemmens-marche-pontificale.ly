@@ -252,8 +252,8 @@ melodyVoice = \relative c'' {
   <a c e>4-! <b d e>8. q16 <a c e>4-! <b d e>8. q16|
   <<
     \new Voice {\voiceOne g'2(f8) r8 \tuplet 3/2{f,8 f f }}
-    { \voiceTwo <a~ c~ es~>2 <a c es>8 s8 s4} 
->>
+    { \voiceTwo <a~ c~ es~>2 <a c es>8 s8 s4}
+  >>
 }
 
 bassVoice = \relative c {
