@@ -69,7 +69,7 @@ jobs:
           echo "Listing files in ${{matrix.directory}}:"
           ls -R ${{matrix.directory}}
       - name: Upload PDF Artifacts
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: "${{matrix.directory}} Scores"
           path: ${{matrix.directory}}/*.pdf
